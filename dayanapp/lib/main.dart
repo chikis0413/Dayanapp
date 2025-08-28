@@ -9,11 +9,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(  // Asegúrate de envolver todo en un MaterialApp
+    return MaterialApp( 
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text('Mi Aplicación'),  // Título corregido
+          title: const Text('Mi Aplicación'),  
         ),
         body: Center(
           child: const Text(
