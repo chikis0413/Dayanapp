@@ -7,18 +7,19 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(Title),
-      ),
-      body: Center(
-        child: const Text(
-          '¡Hola Mundo!',
-          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+    return MaterialApp(  // Asegúrate de envolver todo en un MaterialApp
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+          title: const Text('Mi Aplicación'),  // Título corregido
+        ),
+        body: Center(
+          child: const Text(
+            '¡Hola Mundo!',
+            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );
